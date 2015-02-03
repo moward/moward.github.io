@@ -10,9 +10,10 @@ $(function () {
       $('.header').fadeOut();
     }
   };
+  //respond to changes in viewport
   mq.addListener(recalc);
+  //respond to scrolling
   $(window).scroll(recalc);
-  if (mq.matches) {
-    $('.header').hide();
-  }
+  //initialize view of header
+  recalc();
 });
