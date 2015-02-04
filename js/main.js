@@ -3,7 +3,7 @@ var topScrollThreshhold = 100;
 var mq = window.matchMedia( "(min-width : 1024px)" );
 
 $(function () {
-  var recalc = function (instantOut) {
+  var recalc = function (event, instantOut) {
     if($(window).scrollTop() > topScrollThreshhold || !mq.matches) {
       $('.header').fadeIn();
     } else {
@@ -20,5 +20,5 @@ $(function () {
   //respond to scrolling
   $(window).scroll(recalc);
   //initialize view of header
-  recalc(true);
+  recalc({}, true);
 });
