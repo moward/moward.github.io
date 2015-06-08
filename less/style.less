@@ -98,6 +98,10 @@ header.header {
     font-weight: 600;
   }
 
+  & a:hover {
+    text-decoration: underline;
+  }
+
   &#bio {
     .bio-figure {
       display: none;
@@ -117,13 +121,44 @@ section.body-section.last {
   /*padding-bottom: 4rem; height of footer*/
 }
 
-footer.notice {
+footer {
   background-color: darken(@nq-white, 10%);
-  height: 3rem;
-  position: absolute;
-  padding: 1em;
   box-sizing: border-box;
   width: 100%;
+  padding: 0.3rem;
+
+  .footer-wrapper {
+
+    .social-links {
+      float: right;
+      font-size: 0;
+      a {
+        span {
+          background-image: url(../images/social.png);
+          width: 50px;
+          height: 50px;
+          display: inline-block;
+          margin: .5rem;
+        }
+
+        &#social-github span {
+          background-position: 0 0;
+        }
+        &#social-linkedin span {
+          background-position: 50px 0;
+        }
+        &#social-flickr span {
+          background-position: 100px 0;
+        }
+      }
+    }
+
+    .copyright-notice {
+      color: @nq-black;
+      line-height: 50px;
+      margin: .5rem;
+    }
+  }
 }
 
 /*
@@ -185,7 +220,7 @@ footer.notice {
     }
   }
 
-  section.body-section {
+  .body-section {
     font-size: 145%;
 
     .content {
@@ -222,8 +257,8 @@ footer.notice {
 
   .email {
     text-align: center;
-    font-size: 1.66em;
-    margin: 2em auto;
+    font-size: 1.25em;
+    margin: 0.5em auto;
     width: 15em;
   }
 }

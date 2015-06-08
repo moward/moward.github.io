@@ -35,7 +35,7 @@
       <h2>Hello</h2>
       <figure class="bio-figure"><div class="bio-image"></div></figure>
       <div class="content">
-        <p>My name is Matthew Howard (or just Matt). I’m currently a sophomore studying computer engineering with a minor in mathematics at the <a href="http://upenn.edu">University of Pennsylvania</a>. In my free time, I serve on the executive board of <a href="http://pennapps.com">PennApps</a>, one of the world’s largest hackathons. In particular, I oversee logistics and purchasing. I’m also a member of the <a href="http://penngleeclub.com">Penn Glee Club</a> and <a href="http://pennchants.com">The Pennchants</a> a cappella group. This spring, I’m a teaching assistant for CIS 240, "Intro to Computer Architecture".</p>
+        <p>My name is Matthew Howard (or just Matt). I’m currently a rising junior studying computer engineering with a minor in mathematics at the <a href="http://upenn.edu" target="_blank">University of Pennsylvania</a>. I'm currently working as a Software Developer Intern at <a href="http://epic.com" target="_blank">Epic Systems</a> in Verona, Wisconsin. In my free time, I serve as the Vice Director of <a href="http://pennapps.com" target="_blank">PennApps</a>, one of the world’s largest hackathons. I’m also a member of the <a href="http://penngleeclub.com" target="_blank">Penn Glee Club</a> and <a href="http://pennchants.com" target="_blank">The Pennchants</a> a cappella group. This past spring, I was a teaching assistant for CIS 240, "Intro to Computer Architecture".</p>
         <p>I spent the last summer in Durham, NC working as an intern for IBM in Cloud and Smarter Infrastructure. While there, I focused on mainframe administration, product testing, and web application development.</p>
         <p>Finally, I have a handful of other hobbies I use to fill in the cracks, including web design, photography, arranging music, and hiking.</p>
     </div>
@@ -43,24 +43,37 @@
     <section class="body-section" id="projects">
       <h2>Projects</h2>
       <div class="content">
-        <p>Coming soon...</p>
+        <article id="project-winwood">
+          <header>
+            <h3>Project Winwood - Self-Driving Vehicles</h3>
+          </header>
+          <p>I built Project Winwood for my final project for ESE 350, "Microcontrollers &amp; Embedded Systems", along with my partner Chris Champaigne. The project consists of self-driving vehicles, built largely from scratch, that receive waypoints via a web-based console and navigate autonomously. The robots are controlled by C code running on a Raspberry Pi 2 and includ components for sensor interfacing, data processing and localization, and closed loop drivetrain control. Much more information on the project can be found on our <a href="http://winwood.matt.how/" target="_blank">project blog</a>.</p>
+        </article>
+        <article id="project-winwood">
+          <header>
+            <h3>Pennchants.com</h3>
+            <p>As part of my responsibilities as webmaster, I undertook the task of redesigning The Pennchants website to serve as the group's online presence. I chose  WordPress as a content management system because of its simplicity and extensive community support. I then designed a responsive theme based on <a href="http://themble.com/bones/">Bones</a>. See the site at <a href="pennchants.com" target="_blank">Pennchants.com</a>.
+          </header>
+        </article>
     </div>
     </section>
     <section class="body-section last" id="contact">
       <h2>Contact</h2>
       <div class="content email">
         Want to reach out for any reason? Your best bet is to send an email to <br/> hey (at) matt.how.
-    </div>
+      </div>
     </section>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+    <footer>
+      <div class="footer-wrapper body-section clearfix">
+        <div class="social-links">
+          <a href="http://github.com/moward" title="GitHub" id="social-github"><span></span></a>
+          <a href="http://linkedin.com/in/matthewshoward" title="LinkedIn" id="social-linkedin"><span></span></a>
+          <a href="http://flickr.com/photos/mhowar/" title="Flickr" id="social-flickr"><span></span></a>
+        </div>
+        <div class="copyright-notice">
+          &copy; 2015 Matthew Howard
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
